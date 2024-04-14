@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Arka planı siyah yap */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px; /* Yazıyı üstten aşağıya doğru kaydır */
+    margin-bottom: 50px; /* Zamanlayıcıyı yazıdan biraz aşağıda olacak şekilde ayarla */
+}
+
+h1 {
+    color: white; /* Başlığı beyaz yap */
+    margin-bottom: 20px; /* Yazı ile sayaç arasında boşluk bırak */
+}
+
+#countdown {
+    display: inline-block;
+    color: #00f5ff; /* Rakamları mavi yap */
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #00f5ff; /* Mavi neon çerçeve */
+    box-shadow: 0 0 10px #00f5ff; /* Mavi neon efekti */
+    animation: neonEffect 1.5s ease-in-out infinite alternate; /* Hareketli neon efekti */
+}
+
+#countdown div {
+    display: inline-block;
+    margin: 0 10px; /* Rakamlar arasındaki boşluğu ayarla */
+}
+
+@keyframes neonEffect {
+    from {
+        box-shadow: 0 0 10px #00f5ff;
+    }
+    to {
+        box-shadow: 0 0 20px #00f5ff, 0 0 30px #00f5ff, 0 0 40px #00f5ff, 0 0 70px #00f5ff;
+    }
+}
+video{
+    text-align: center;
+}
+#signature{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
